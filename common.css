@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'PP Mori';
+    src: url('assets/fonts/PPMori-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pilowlava';
+    src: url('assets/fonts/Pilowlava-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* colors */
+    --deep-black: #000000;
+    --deep-knowledge-blue: #000D22;
+    --oceanic-blue: #001A41;
+    --eco-white: #ffffff;
+    --cool-grey: #C8DDE8;
+    --mid-grey: #97B0C0;
+    --light-blue: #7BEEFF;
+    --glowing-blue: #00D8FF;
+    --light-pink: #FFA7C2;
+    --glowing-pink: #FF407E;
+    --light-purple: #ECA7FF;
+    --glowing-purple: #CA40FF;
+
+    /* gradients */
+    --gradient-1: linear-gradient(90deg, #FF427B 0%, #B042FF 51%, #00D8FF 100%);
+    --gradient-2: linear-gradient(90deg, #06D3FF 0%, #B042FF 100%);
+    --gradient-3: linear-gradient(90deg, #B042FF 0%, #FF427B 100%);
+    --gradient-4: linear-gradient(90deg, #FF427B 0%, #00D8FF 100%);
+
+    /* fonts */
+    --font-1: 'PP Mori', serif;
+    --font-2: 'Pilowlava', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-1);
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+}

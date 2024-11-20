@@ -1,0 +1,1 @@
+Before launching, download the asset archive (https://drive.google.com/drive/folders/1A_4IKfBrO328Q1zxP76BGhS7AG4wSvha?usp=sharing) and place it in the root folder of the project
