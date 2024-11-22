@@ -9,7 +9,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
 // toggle menu
 const headerMenu = document.getElementById('menu');
 const expandedMenu = document.querySelector('.expanded-menu');
@@ -24,7 +23,6 @@ headerMenu.addEventListener('click', () => {
         menuIcon.src = 'assets/header-menu.svg';
     }
 });
-
 
 // Animated landing
 const texts = document.querySelectorAll('.animative-text .text-block');
