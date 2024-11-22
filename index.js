@@ -24,6 +24,8 @@ headerMenu.addEventListener('click', () => {
         menuIcon.src = 'assets/header-menu.svg';
     }
 });
+
+
 // Animated landing
 const texts = document.querySelectorAll('.animative-text .text-block');
 const ctaBlock = document.querySelector('.animative-text .cta-block');

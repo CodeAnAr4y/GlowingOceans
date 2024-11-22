@@ -826,4 +826,20 @@ footer {
         text-align: center;
         align-items: center;
     }
+
+    /* footer */
+    .mail-section{
+        width: 80%;
+        display: block;
+    }
+
+    .mail-input{
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .mail-button{
+        width: 100%;
+        margin: 0;
+    }
 }
