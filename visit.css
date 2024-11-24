@@ -399,19 +399,19 @@ p {
     margin: 30px;
 }
 
-.card-img {
+.card-video {
     overflow: hidden;
     border-radius: 48px 48px 0 0;
+    width: 100%;
 }
 
 .card-text-container {
-    padding: 10px 24px 0 24px;
+    padding: 0 24px 0 24px;
 }
 
 .card-title {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 8px;
     text-align: center;
 }
 
