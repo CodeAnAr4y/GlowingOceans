@@ -45,7 +45,7 @@ headerMenu.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const scrollToTopButton = document.getElementById('scrollToTop');
     function toggleScrollToTopButton() {
-        if (window.scrollY > 800) {
+        if (window.scrollY > 800 && window.innerWidth > 576) {
             scrollToTopButton.style.display = 'block';
         } else {
             scrollToTopButton.style.display = 'none';
