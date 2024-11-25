@@ -40,3 +40,20 @@ headerMenu.addEventListener('click', () => {
             scrollToElement(targetClass);
         });
     });
+
+// Scroll to top button
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollToTopButton = document.getElementById('scrollToTop');
+    function toggleScrollToTopButton() {
+        if (window.scrollY > 800) {
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
+        }
+    }
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    window.addEventListener('scroll', toggleScrollToTopButton);
+    scrollToTopButton.addEventListener('click', scrollToTop);
+});
