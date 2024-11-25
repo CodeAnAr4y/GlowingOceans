@@ -91,7 +91,6 @@ header.transparent {
 }
 
 .video-container {
-    width: 100vw;
     height: 120vh;
     overflow: hidden;
     z-index: -1;
@@ -104,7 +103,6 @@ header.transparent {
     width: 100%;
     max-height: 100vh;
     object-fit: cover;
-    /* transform: translate(-50%, -50%); */
     z-index: -1;
 }
 
@@ -203,23 +201,22 @@ header.transparent {
 .component-2 {
     position: relative;
     color: var(--eco-white);
-    width: 100vw;
     height: 100vh;
     background: var(--gradient-3);
     margin-top: -170px;
 }
 
 .c2-content {
-    width: 100vw;
     position: absolute;
     top: 0;
     left: 0;
     margin-top: 30px;
+    width: 100%;
 }
 
 .c2-bg-image {
     margin-top: -190px;
-    width: 100vw;
+    max-width: 100%;
 }
 
 .c2-btn-container {
@@ -273,7 +270,6 @@ header.transparent {
 
 /* Component 3 */
 .component-3 {
-    width: 100vw;
     height: auto;
     overflow: hidden;
     position: relative;
@@ -374,7 +370,6 @@ p {
 
 /* Component 4 */
 .component-4 {
-    width: 100vw;
     height: auto;
     overflow: hidden;
     position: relative;
@@ -481,7 +476,8 @@ p {
 
 .wide-image {
     position: absolute;
-    width: 100vw;
+    /* width: 100vw; */
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -20%);
@@ -489,7 +485,6 @@ p {
 }
 
 .c5-background {
-    width: 100vw;
     height: 200vh;
     background: var(--gradient-1);
     position: relative;
@@ -504,7 +499,6 @@ p {
     font-size: 36px;
     font-weight: 600;
     color: var(--eco-white);
-    width: 100vw;
 }
 
 .c5-title {
@@ -542,7 +536,6 @@ p {
 /* Component 6 */
 .component-6 {
     position: relative;
-    /* margin-top: -180px; */
     z-index: 2;
 }
 
@@ -551,7 +544,7 @@ p {
 }
 
 .c6-background {
-    width: 100vw;
+    max-width: 100%;
 }
 
 .c6-text-content {
@@ -600,7 +593,7 @@ p {
 }
 
 .component-7 img {
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 .c7-content {
@@ -626,7 +619,7 @@ p {
 footer {
     position: relative;
     background-color: var(--deep-knowledge-blue);
-    width: 100vw;
+    width: 100%;
     height: 80vh;
     margin-top: -140px;
     z-index: 2;
@@ -679,6 +672,7 @@ footer {
 
 .footer-content {
     height: 100%;
+    max-width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: center;

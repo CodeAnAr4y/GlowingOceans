@@ -89,7 +89,7 @@ header.transparent {
 footer {
     position: relative;
     background-color: var(--deep-knowledge-blue);
-    width: 100vw;
+    /* width: 100vw; */
     height: 80vh;
     margin-top: -140px;
     z-index: 2;
