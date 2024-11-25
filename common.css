@@ -32,6 +32,10 @@
     --gradient-2: linear-gradient(90deg, #06D3FF 0%, #B042FF 100%);
     --gradient-3: linear-gradient(90deg, #B042FF 0%, #FF427B 100%);
     --gradient-4: linear-gradient(90deg, #FF427B 0%, #00D8FF 100%);
+    --gradient-5: linear-gradient(90deg, #00D8FF 0%, #B042FF 51%, #FF427B 100%);
+    --gradient-6: linear-gradient(90deg, #B042FF 0%, #06D3FF 100%);
+    --gradient-7: linear-gradient(90deg, #FF427B 0%, #B042FF 100%);
+    --gradient-8: linear-gradient(90deg, #00D8FF 0%, #FF427B 100%);
 
     /* fonts */
     --font-1: 'PP Mori', serif;

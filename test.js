@@ -24,19 +24,3 @@ headerMenu.addEventListener('click', () => {
         menuIcon.src = 'assets/header-menu.svg';
     }
 });
-
-
-// Scroll on card click
-    function scrollToElement(targetClass) {
-        const targetElement = document.querySelector(`.${targetClass}`);
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    }
-
-    document.querySelectorAll('.card').forEach(button => {
-        button.addEventListener('click', () => {
-            const targetClass = button.dataset.scrollTarget;
-            scrollToElement(targetClass);
-        });
-    });
