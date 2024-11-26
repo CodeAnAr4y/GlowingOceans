@@ -224,7 +224,6 @@ footer {
 }
 
 /* Component 1 */
-
 .component-1 {
     position: relative;
     width: 100%;
@@ -875,5 +874,28 @@ p {
         justify-content: center;
         text-align: center;
         align-items: center;
+    }
+}
+
+@media (max-width: 576px){
+    .component-1{
+        height: 120vh;
+    }
+    .c1-bg-img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .c1-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .vp-target{
+        max-width: 100vw !important;
+        width: 100vw !important;
     }
 }
