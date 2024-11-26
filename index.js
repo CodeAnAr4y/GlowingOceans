@@ -25,65 +25,80 @@ headerMenu.addEventListener('click', () => {
 });
 
 // Animated landing
-const texts = document.querySelectorAll('.animative-text .text-block');
-const ctaBlock = document.querySelector('.animative-text .cta-block');
+const texts = document.querySelectorAll(".animative-text .text-block");
+const ctaBlock = document.querySelector(".animative-text .cta-block");
 let currentIndex = 0;
 
 function showNextText() {
     if (currentIndex > 0) {
-        texts[currentIndex - 1].classList.remove('active');
-        texts[currentIndex - 1].classList.add('hidden');
+        texts[currentIndex - 1].classList.remove("active");
+        texts[currentIndex - 1].classList.add("hidden");
     }
 
     if (currentIndex < texts.length) {
         const text = texts[currentIndex];
-        text.classList.add('active');
+        text.classList.add("active");
         currentIndex++;
 
         setTimeout(showNextText, 2000);
     } else {
-        ctaBlock.classList.add('active');
+        ctaBlock.classList.add("active");
     }
 }
 
-window.addEventListener('load', () => {
-    setTimeout(showNextText, 500);
-});
+if (window.innerWidth <= 576) {
+    ctaBlock.classList.add("active");
+} else {
+    window.addEventListener("load", () => {
+        setTimeout(showNextText, 500);
+    });
+}
 
 // Play gif on hover
-document.addEventListener('DOMContentLoaded', () => {
-    const gifImage = document.querySelector('#gif-toggle1');
+    // const gifImages = document.querySelectorAll(".gif-toggle");
 
-    gifImage.addEventListener('mouseenter', () => {
-        gifImage.src = gifImage.getAttribute('data-gif');
-    });
+    // gifImages.forEach((gifImage) => {
+    //     if (window.innerWidth >= 576) {
+    //         gifImage.addEventListener("mouseenter", () => {
+    //             gifImage.src = gifImage.getAttribute("data-gif");
+    //         });
 
-    gifImage.addEventListener('mouseleave', () => {
-        gifImage.src = gifImage.getAttribute('data-static');
-    });
-});
+    //         gifImage.addEventListener("mouseleave", () => {
+    //             gifImage.src = gifImage.getAttribute("data-static");
+    //         });
+    //     } else {
+    //         gifImage.src = gifImage.getAttribute("data-gif");
+    //     }
+    // });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const gifImage = document.querySelector('#gif-toggle2');
+// Swiper
+let swiper;
+function initSwiper() {
+    const screenWidth = window.innerWidth;
 
-    gifImage.addEventListener('mouseenter', () => {
-        gifImage.src = gifImage.getAttribute('data-gif');
-    });
+    if (swiper) {
+        swiper.destroy(true, true);
+    }
 
-    gifImage.addEventListener('mouseleave', () => {
-        gifImage.src = gifImage.getAttribute('data-static');
-    });
-});
+    if (screenWidth < 576) {
+        swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 10,
+        });
+    } else {
+        swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            centeredSlides: false,
+            spaceBetween: 10,
+        });
+    }
+}
 
-document.addEventListener('DOMContentLoaded', () => {
-    const gifImage = document.querySelector('#gif-toggle3');
-
-    gifImage.addEventListener('mouseenter', () => {
-        gifImage.src = gifImage.getAttribute('data-gif');
-    });
-
-    gifImage.addEventListener('mouseleave', () => {
-        gifImage.src = gifImage.getAttribute('data-static');
+document.addEventListener("DOMContentLoaded", () => {
+    initSwiper();
+    window.addEventListener("resize", () => {
+        initSwiper();
     });
 });
 
