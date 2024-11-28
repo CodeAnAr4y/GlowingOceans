@@ -884,9 +884,6 @@ p {
         height: 100%;
         object-fit: cover;
     }
-
-
-
     .c1-content{
         display: flex;
         flex-direction: column;
