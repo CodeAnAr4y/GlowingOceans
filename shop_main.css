@@ -113,11 +113,10 @@ header.transparent {
 .c1-swiper-slide img {
     width: 100%;
     height: 615px;
-    position: relative;
     border-radius: 32px;
 }
 
-.c1-swiper-slide-content{
+.c1-swiper-slide-content {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -143,11 +142,10 @@ header.transparent {
     transition: color 0.3s ease;
 }
 
-.c1-swiper-slide-content button:hover{
+.c1-swiper-slide-content button:hover {
     background: var(--gradient-1);
     color: var(--eco-white);
 }
-
 
 .swiper-button-next {
     background: url("assets/shop/c1-swiper-arrow-right.svg") no-repeat center;
@@ -182,10 +180,23 @@ header.transparent {
 }
 
 /* Component 2 */
-.c2-img {
+.c2-link {
+    display: block;
+    overflow: hidden;
     border-radius: 32px;
+    position: relative;
     width: 100%;
     margin-bottom: 20px;
+}
+
+.c2-img {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.c2-link:hover .c2-img {
+    transform: scale(1.2);
 }
 
 .c2-title {
@@ -197,42 +208,48 @@ header.transparent {
 }
 
 /* Component 3 */
-.component-3{
+.component-3 {
     margin-bottom: 48px;
 }
 
-.c3-swiper-slide img{
+.c3-swiper-slide img {
     width: 100%;
     border-radius: 32px;
     margin-bottom: 24px;
 }
 
-.c3-swiper-title{
+.c3-swiper-title {
     color: var(--oceanic-blue);
     text-align: center;
     font-weight: bold;
-
 }
 
-.c3-swiper-desc{
+.c3-swiper-desc {
     color: var(--oceanic-blue);
     text-align: center;
 }
 
 /* Component 4 */
-.component-4{
-    height: 100vh;
-    background-image: url("assets/shop/c4-bg-img.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.component-4 {
+    position: relative;
     margin-bottom: 77px;
 }
 
-.c4-content{
-    padding-top: 100px;
+.component-4 img {
+    width: 100%;
+}
+
+.c4-content {
     color: var(--eco-white);
+    position: absolute;
+    top: 10%;
+    left: 20%;
     max-width: 450px;
+}
+
+.c4-content p {
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .c4-content button {
@@ -245,22 +262,51 @@ header.transparent {
     transition: color 0.3s ease;
 }
 
-.c4-content button:hover{
+.c4-content button:hover {
     background: var(--gradient-1);
     color: var(--eco-white);
 }
 
+/* .component-4 {
+    margin-bottom: 77px;
+}
+
+.component-4 img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.c4-content {
+    z-index: 1;
+    color: var(--eco-white);
+    max-width: 450px;
+    margin-top: -100vh;
+} */
+
+/* .c4-content button {
+    width: 300px;
+    background-color: var(--light-blue);
+    font-size: 16px;
+    color: var(--deep-knowledge-blue);
+    padding: 12px 0 12px 0;
+    border-radius: 24px;
+    transition: color 0.3s ease;
+}
+
+.c4-content button:hover {
+    background: var(--gradient-1);
+    color: var(--eco-white);
+} */
+
 /* Component 5 */
-.component-5{
+.component-5 {
     height: 500px;
 }
 
-.c5-title{
+.c5-title {
     text-align: center;
     color: var(--deep-knowledge-blue);
-}
-
-.c5-swiper .swiper-pagination{
 }
 
 .c5-swiper .swiper-pagination .swiper-pagination-bullet {
@@ -274,10 +320,10 @@ header.transparent {
     background-size: contain;
 }
 
-.c5-swiper-slide{
+.c5-swiper-slide {
     height: 290px;
 }
-.c5-slide-content{
+.c5-slide-content {
     height: 254px;
     background-color: var(--glowing-blue);
     border-radius: 32px;
@@ -289,8 +335,9 @@ footer {
     position: relative;
     background-color: var(--deep-knowledge-blue);
     width: 100%;
-    height: 80vh;
+    height: auto;
     margin-top: -140px;
+    padding-top: 120px;
     z-index: 2;
     clip-path: polygon(
         100% 100%,
@@ -454,9 +501,99 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .c3-swiper-slide{
+    .c1-swiper {
+        height: 600px;
+    }
+
+    .c1-swiper-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .c1-swiper-slide img {
+        width: 100%;
+        height: auto;
+        border-radius: 0%;
+    }
+    .c1-swiper-slide-content {
+        width: 90%;
+        position: static;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        height: auto;
+        background-color: var(--glowing-blue);
+        color: var(--oceanic-blue);
+        border-radius: 32px;
+        margin-top: -40px;
+    }
+    .c1-swiper .swiper-pagination .swiper-pagination-bullet {
+        background: url("assets/shop/c5-swiper-pagination-bullet.svg") no-repeat center;
+        background-size: contain;
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    .c1-swiper .swiper-pagination .swiper-pagination-bullet-active {
+        background: url("assets/shop/c5-swiper-pagination-bullet-active.svg") no-repeat center;
+        background-size: contain;
+    }
+
+    /* Component 2 */
+
+    /* Component 3 */
+    .c3-swiper-slide {
         width: 300px;
     }
+
+    /* Component 4 */
+    .component-4 {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .component-4 img {
+        height: 440px;
+        object-fit: cover;
+        position: relative;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .c4-content {
+        margin-top: -70px;
+        position: static;
+        background: var(--gradient-2);
+        padding: 20px;
+        color: var(--eco-white);
+        max-width: 90%;
+        text-align: center;
+        border-radius: 32px;
+    }
+
+    .c4-content h3 {
+        font-size: 36px;
+    }
+
+    .c4-content p {
+        font-size: 20px;
+    }
+
+    .c4-content button {
+        width: 100%;
+    }
+
+    .c4-content button:hover {
+        background: var(--gradient-1);
+        color: var(--eco-white);
+    }
+
+    .c5-swiper-slide {
+        width: 90%;
+    }
+
     footer {
         clip-path: polygon(
             100% 100%,
@@ -503,6 +640,15 @@ footer {
             97.5% 1.05%,
             100% 0.86%
         );
-        height: 130vh;
+        /* height: 110vh; */
+    }
+}
+
+@media (max-width: 375px) {
+    .c1-swiper {
+        height: 660px;
+    }
+    footer {
+        height: 140vh;
     }
 }
