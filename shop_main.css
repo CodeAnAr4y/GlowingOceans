@@ -1,6 +1,8 @@
 body {
     background: linear-gradient(0deg, var(--eco-white) 0%, var(--eco-white) 75%, var(--light-blue) 100%);
+    max-width: 100%;
 }
+
 
 a {
     text-decoration: none;
@@ -266,38 +268,6 @@ header.transparent {
     background: var(--gradient-1);
     color: var(--eco-white);
 }
-
-/* .component-4 {
-    margin-bottom: 77px;
-}
-
-.component-4 img {
-    width: 100%;
-    position: relative;
-    z-index: -1;
-}
-
-.c4-content {
-    z-index: 1;
-    color: var(--eco-white);
-    max-width: 450px;
-    margin-top: -100vh;
-} */
-
-/* .c4-content button {
-    width: 300px;
-    background-color: var(--light-blue);
-    font-size: 16px;
-    color: var(--deep-knowledge-blue);
-    padding: 12px 0 12px 0;
-    border-radius: 24px;
-    transition: color 0.3s ease;
-}
-
-.c4-content button:hover {
-    background: var(--gradient-1);
-    color: var(--eco-white);
-} */
 
 /* Component 5 */
 .component-5 {
