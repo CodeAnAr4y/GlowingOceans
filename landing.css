@@ -39,7 +39,7 @@
     color: var(--deep-knowledge-blue);
     font-size: 24px;
     padding: 8px 30px;
-    font-weight: 600;
+    font-family: var(--font-1-bold);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -65,7 +65,7 @@ p {
 }
 
 .c1-text h1 {
-    font-weight: 700;
+        font-family: var(--font-1-bold);
     font-size: 48px;
 }
 

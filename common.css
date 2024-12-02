@@ -1,45 +1,57 @@
 @font-face {
-    font-family: 'PP Mori';
-    src: url('assets/fonts/PPMori-Regular.otf') format('opentype');
+    font-family: "Pilowlava";
+    src: url("assets/fonts/02-Fonts/Pilowlava-Regular.otf");
     font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Pilowlava';
-    src: url('assets/fonts/Pilowlava-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+    font-family: "PP Mori Regular";
+    src: url("assets/fonts/02-Fonts/PPMori-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "PP Mori Bold";
+    src: url("assets/fonts/02-Fonts/PPMori-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "PP Mori SemiBold";
+    src: url("assets/fonts/02-Fonts/PPMori-SemiBold.ttf");
+        font-family: var(--font-1-bold);
 }
 
 :root {
     /* colors */
     --deep-black: #000000;
-    --deep-knowledge-blue: #000D22;
-    --oceanic-blue: #001A41;
+    --deep-knowledge-blue: #000d22;
+    --oceanic-blue: #001a41;
     --eco-white: #ffffff;
-    --cool-grey: #C8DDE8;
-    --mid-grey: #97B0C0;
-    --light-blue: #7BEEFF;
-    --glowing-blue: #00D8FF;
-    --light-pink: #FFA7C2;
-    --glowing-pink: #FF407E;
-    --light-purple: #ECA7FF;
-    --glowing-purple: #CA40FF;
+    --cool-grey: #c8dde8;
+    --mid-grey: #97b0c0;
+    --light-blue: #7beeff;
+    --glowing-blue: #00d8ff;
+    --light-pink: #ffa7c2;
+    --glowing-pink: #ff407e;
+    --light-purple: #eca7ff;
+    --glowing-purple: #ca40ff;
 
     /* gradients */
-    --gradient-1: linear-gradient(90deg, #FF427B 0%, #B042FF 51%, #00D8FF 100%);
-    --gradient-2: linear-gradient(90deg, #06D3FF 0%, #B042FF 100%);
-    --gradient-3: linear-gradient(90deg, #B042FF 0%, #FF427B 100%);
-    --gradient-4: linear-gradient(90deg, #FF427B 0%, #00D8FF 100%);
-    --gradient-5: linear-gradient(90deg, #00D8FF 0%, #B042FF 51%, #FF427B 100%);
-    --gradient-6: linear-gradient(90deg, #B042FF 0%, #06D3FF 100%);
-    --gradient-7: linear-gradient(90deg, #FF427B 0%, #B042FF 100%);
-    --gradient-8: linear-gradient(90deg, #00D8FF 0%, #FF427B 100%);
+    --gradient-1: linear-gradient(90deg, #ff427b 0%, #b042ff 51%, #00d8ff 100%);
+    --gradient-2: linear-gradient(90deg, #06d3ff 0%, #b042ff 100%);
+    --gradient-3: linear-gradient(90deg, #b042ff 0%, #ff427b 100%);
+    --gradient-4: linear-gradient(90deg, #ff427b 0%, #00d8ff 100%);
+    --gradient-5: linear-gradient(90deg, #00d8ff 0%, #b042ff 51%, #ff427b 100%);
+    --gradient-6: linear-gradient(90deg, #b042ff 0%, #06d3ff 100%);
+    --gradient-7: linear-gradient(90deg, #ff427b 0%, #b042ff 100%);
+    --gradient-8: linear-gradient(90deg, #00d8ff 0%, #ff427b 100%);
 
     /* fonts */
-    --font-1: 'PP Mori', serif;
-    --font-2: 'Pilowlava', serif;
+    --font-1: "PP Mori Regular", serif;
+    --font-1-semibold: "PP Mori SemiBold", serif;
+    --font-1-bold: "PP Mori Bold", serif;
+    --font-2: "Pilowlava", serif;
 }
 
 body {
@@ -50,22 +62,23 @@ body {
 
 h1 {
     font-size: 80px;
-    font-weight: bold;
+    font-family: var(--font-1-bold);
 }
 
 h2 {
     font-size: 64px;
-    font-weight: bold;
+    font-family: var(--font-1-bold);
 }
+
 
 h3 {
     font-size: 36px;
-    font-weight: bold;
+    font-family: var(--font-1-bold);
 }
 
 h4 {
     font-size: 24px;
-    font-weight: 600;
+    font-family: var(--font-1-semibold);
 }
 
 button {
@@ -76,11 +89,11 @@ button {
 @media (max-width: 768px) {
     h1 {
         font-size: 48px;
-        font-weight: bold;
+        font-family: var(--font-1-bold);
     }
 
     h2 {
         font-size: 40px;
-        font-weight: bold;
+        font-family: var(--font-1-bold);
     }
 }

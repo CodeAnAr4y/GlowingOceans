@@ -60,7 +60,7 @@ header.transparent {
     margin-bottom: 32px;
     font-size: 36px;
     color: var(--eco-white);
-    font-weight: 600;
+    font-family: var(--font-1-bold);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -160,7 +160,7 @@ footer {
 .mail-input-title {
     color: var(--eco-white);
     font-size: 24px;
-    font-weight: 600;
+    font-family: var(--font-1-bold);
     margin: 0 8px 0 0;
 }
 
@@ -179,7 +179,7 @@ footer {
     background-color: var(--light-blue);
     border-radius: 24px;
     color: var(--deep-knowledge-blue);
-    font-weight: 600;
+    font-family: var(--font-1-bold);
     margin-left: 18px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -192,7 +192,7 @@ footer {
 .footer-title {
     color: var(--eco-white);
     font-size: 16px;
-    font-weight: 600;
+    font-family: var(--font-1-bold);
     margin-bottom: 25px;
 }
 
@@ -246,7 +246,7 @@ footer {
     color: var(--deep-knowledge-blue);
     font-size: 24px;
     padding: 8px 30px;
-    font-weight: 600;
+    font-family: var(--font-1-bold);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -272,7 +272,7 @@ p {
 }
 
 .c1-text h1 {
-    font-weight: 700;
+        font-family: var(--font-1-bold);
     font-size: 64px;
 }
 
@@ -372,7 +372,7 @@ p {
 
 .c2-title {
     font-size: 36px;
-    font-weight: 700;
+        font-family: var(--font-1-bold);
     margin-bottom: 16px;
 }
 
@@ -411,7 +411,7 @@ p {
 
 .card-title {
     font-size: 24px;
-    font-weight: 600;
+    font-family: var(--font-1-bold);
     text-align: center;
 }
 
@@ -495,7 +495,7 @@ p {
 .c3-title {
     text-align: center;
     font-size: 36px;
-    font-weight: 600;
+    font-family: var(--font-1-bold);
 }
 
 .c3-desc {
@@ -509,7 +509,7 @@ p {
     background-color: var(--light-blue);
     color: var(--deep-knowledge-blue);
     padding: 15px;
-    font-weight: 600;
+    font-family: var(--font-1-bold);
     transition: background-color 0.3s ease, color 0.3s ease;
     width: 300px;
 }
@@ -599,7 +599,7 @@ p {
 }
 
 .c4-title {
-    font-weight: bold;
+    font-family: var(--font-1-bold);
     font-size: 36px;
     margin-bottom: 8px;
 }
@@ -691,12 +691,12 @@ p {
 
 .c5-title {
     font-size: 64px;
-    font-weight: 700;
+        font-family: var(--font-1-bold);
     margin-bottom: 32px;
 }
 .c5-subtitle {
     font-size: 24px;
-    font-weight: 600;
+    font-family: var(--font-1-bold);
 }
 .c5-desc {
     font-size: 20px;
@@ -764,7 +764,7 @@ p {
 }
 .c5-slide-title {
     font-size: 24px;
-    font-weight: 600;
+    font-family: var(--font-1-bold);
 }
 
 .c5-slide-desc {
@@ -792,7 +792,7 @@ p {
 
 .c6-title{
     text-align: center;
-    font-weight: bold;
+    font-family: var(--font-1-bold);
     font-size: 36px;
     margin-bottom: 60px;
 }
@@ -800,7 +800,7 @@ p {
 .c6-subtitle{
     font-size: 24px;
     margin-bottom: 8px;
-    font-weight: 600;
+    font-family: var(--font-1-bold);
 }
 
 .c6-desc{
