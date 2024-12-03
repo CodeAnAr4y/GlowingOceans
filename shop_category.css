@@ -3,7 +3,6 @@ body {
     max-width: 100%;
 }
 
-
 /* Header styles */
 header {
     position: fixed;
@@ -90,37 +89,111 @@ header.transparent {
     }
 }
 
-.main-content{
+.main-content {
     margin-bottom: 200px;
 }
 
 /* Component 1 */
-.component-1{
+.component-1 {
     margin-bottom: 95px;
 }
 
-.title-img{
+.title-img {
     width: 100%;
+    height: 240px;
+    object-fit: cover;
     margin-top: 130px;
     border-radius: 48px;
     margin-bottom: 32px;
 }
 
-.c1-title{
+.c1-title {
     text-align: center;
     font-size: 36px;
-        font-family: var(--font-1-bold);
+    font-family: var(--font-1-bold);
     color: var(--oceanic-blue);
     margin-bottom: 48px;
 }
 
-.c1-filters{
+.c1-filters {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.c1-select{
+.c1-mobile-filter-btn {
+    display: none;
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--deep-knowledge-blue);
+    color: var(--deep-knowledge-blue);
+    padding: 16px 0;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.mobile-filter-menu,
+.mobile-sort-menu,
+.mobile-availability-menu {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--eco-white);
+    z-index: 10;
+    padding-top: 120px;
+}
+
+.menu-title-container {
+    position: relative;
+}
+
+.mobile-menu-title {
+    text-align: center;
+    font-family: var(--font-1-semibold);
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background: transparent;
+}
+
+.filter-btn {
+    background: transparent;
+    display: flex;
+    text-align: start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+}
+
+.filter-btn-arrow {
+    display: flex;
+    justify-content: center;
+    border-left: 1px solid var(--deep-knowledge-blue);
+    height: 100%;
+}
+
+.filter-btn-arrow img {
+    width: 8px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--deep-knowledge-blue);
+    opacity: 1;
+    margin: 0;
+}
+
+.c1-select {
     background: transparent;
     border: 1px solid var(--oceanic-blue);
     color: var(--oceanic-blue);
@@ -131,7 +204,7 @@ header.transparent {
     margin-bottom: 8px;
 }
 
-.c1-results-title{
+.c1-results-title {
     text-align: center;
     font-size: 12px;
     font-weight: 400;
@@ -139,24 +212,24 @@ header.transparent {
     margin-bottom: 12px;
 }
 
-.c1-card-link{
+.c1-card-link {
     text-decoration: none;
 }
 
-.c1-card-img{
+.c1-card-img {
     border-radius: 48px;
     width: 100%;
     margin-bottom: 24px;
 }
 
-.c1-card-title{
+.c1-card-title {
     color: var(--oceanic-blue);
     font-size: 16px;
     font-family: var(--font-1-bold);
     text-align: center;
 }
 
-.c1-card-cost{
+.c1-card-cost {
     color: var(--oceanic-blue);
     font-size: 12px;
     font-weight: 300;
@@ -164,9 +237,7 @@ header.transparent {
 }
 
 /* Component 2 */
-.component-2{
-}
-.c2-text-container{
+.c2-text-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -174,18 +245,18 @@ header.transparent {
     text-align: center;
 }
 
-.c2-content{
+.c2-content {
     max-width: 437px;
 }
 
-.c2-title{
+.c2-title {
     font-family: var(--font-1-bold);
 }
-.c2-desc{
+.c2-desc {
     font-size: 20px;
     margin-bottom: 16px;
 }
-.c2-btn{
+.c2-btn {
     width: 300px;
     padding: 12px 16px;
     border-radius: 24px;
@@ -197,8 +268,8 @@ header.transparent {
 }
 
 .c2-btn:hover {
-color: white;
-background: var(--gradient-4);
+    color: white;
+    background: var(--gradient-4);
 }
 
 /* Footer */
@@ -341,8 +412,6 @@ footer {
     color: var(--eco-white);
 }
 
-
-
 @media (max-width: 768px) {
     /* Header styles */
     header {
@@ -350,7 +419,7 @@ footer {
     }
 
     /* Component 1 */
-    .title-img{
+    .title-img {
         border-radius: 32px;
     }
     /* footer */
@@ -378,7 +447,31 @@ footer {
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
+    .title-img {
+        position: relative;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, 0);
+        border-radius: 0;
+        height: 50vh;
+    }
+    .c1-title {
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 85%;
+        padding: 43px 0;
+        background-color: var(--glowing-blue);
+        border-radius: 32px;
+    }
+    .c1-filters {
+        display: none;
+    }
+    .c1-mobile-filter-btn {
+        display: block;
+    }
     footer {
         clip-path: polygon(
             100% 100%,

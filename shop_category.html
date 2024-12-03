@@ -64,6 +64,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
+                        <!-- desktop filters -->
                         <div class="c1-filters">
                             <div>
                                 <select class="c1-select me-2">
@@ -87,55 +88,137 @@
                         </div>
                     </div>
                 </div>
+                <!-- mobile filters -->
+                <div class="row">
+                    <div class="col-6">
+                        <button id="filter-btn" class="c1-mobile-filter-btn">Filter</button>
+                    </div>
+                    <div class="col-6">
+                        <button id="sort-btn" class="c1-mobile-filter-btn">Sort</button>
+                    </div>
+                </div>
+                <!-- mobile filter menu -->
+                <div class="mobile-filter-menu">
+                    <div class="menu-title-container">
+                        <button id="close-menu" class="close"><img src="assets/shop/categories/close.svg"
+                                alt="Close"></button>
+                        <div class="mobile-menu-title">Filter by</div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <button id="availability-btn" class="filter-btn">
+                            <div class="col-10">Availability</div>
+                            <div class="col-2 filter-btn-arrow">
+                                <img class="show-btn" src="assets/shop/categories/show.svg" alt="Show">
+                            </div>
+                        </button>
+                        <hr>
+                        <button id="product-type-btn" class="filter-btn">
+                            <div class="col-10">Product type</div>
+                            <div class="col-2 filter-btn-arrow">
+                                <img src="assets/shop/categories/show.svg" alt="Show">
+                            </div>
+                        </button>
+                        <hr>
+                    </div>
+                </div>
+                <!-- mobile availability menu -->
+                <div class="mobile-availability-menu">
+                    <div class="menu-title-container">
+                        <button id="return-btn" class="close"><img src="assets/shop/categories/return.svg"
+                                alt="Return"></button>
+                        <div class="mobile-menu-title">Availability</div>
+                    </div>
+                    <hr>
+                    <div class="container pt-4">
+                        <input class="mb-4" type="radio" id="inStock" name="available">
+                        <label for="inStock">In stock</label>
+                        <br />
+                        <input type="radio" id="outOfStock" name="available">
+                        <label for="outOfStock">Out of stock</label>
+                    </div>
+                </div>
+                <!-- mobile sort menu -->
+                <div class="mobile-sort-menu">
+                    <div class="menu-title-container">
+                        <button id="close-sort-btn" class="close"><img src="assets/shop/categories/close.svg"
+                                alt="Close"></button>
+                        <div class="mobile-menu-title">Sort by</div>
+                    </div>
+                    <hr>
+                    <div class="container pt-4">
+                        <input class="mb-4" type="radio" id="featured" name="sort">
+                        <label for="featured">Featured</label>
+                        <br />
+                        <input class="mb-4" type="radio" id="bestSelling" name="sort">
+                        <label for="bestSelling">Best Selling</label>
+                        <br />
+                        <input class="mb-4" type="radio" id="lowHigh" name="sort">
+                        <label for="lowHigh">Price, low to high</label>
+                        <br />
+                        <input class="mb-4" type="radio" id="highLow" name="sort">
+                        <label for="highLow">Price, high to low</label>
+                        <br />
+                        <input class="mb-4" type="radio" id="newOld" name="sort">
+                        <label for="newOld">Date, new to old</label>
+                        <br />
+                        <input type="radio" id="oldNew" name="sort">
+                        <label for="oldNew">Date, old to new</label>
+                    </div>
+                </div>
+
+
+
+
                 <div class="row">
                     <div class="col-12">
                         <div class="c1-results-title">7 Products</div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+                    <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-3">
                         <a class="c1-card-link" href="#">
                             <img class="c1-card-img" src="assets/shop/categories/product-1.png" alt="">
                             <div class="c1-card-title">Lumie</div>
                             <div class="c1-card-cost">$80</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+                    <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-3">
                         <a class="c1-card-link" href="#">
                             <img class="c1-card-img" src="assets/shop/categories/product-2.png" alt="">
                             <div class="c1-card-title">Bioluminescent Tiles</div>
                             <div class="c1-card-cost">$2,500</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+                    <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-3">
                         <a class="c1-card-link" href="#">
                             <img class="c1-card-img" src="assets/shop/categories/product-3.png" alt="">
                             <div class="c1-card-title">Vitamin Sea</div>
                             <div class="c1-card-cost">$15</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+                    <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-3">
                         <a class="c1-card-link" href="#">
                             <img class="c1-card-img" src="assets/shop/categories/product-4.png" alt="">
                             <div class="c1-card-title">Dinoflagellates</div>
                             <div class="c1-card-cost">$15</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+                    <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-3">
                         <a class="c1-card-link" href="#">
                             <img class="c1-card-img" src="assets/shop/categories/product-5.png" alt="">
                             <div class="c1-card-title">DinoPets™ Aquariums for Bioluminescent Plankton</div>
                             <div class="c1-card-cost">from $450</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+                    <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-3">
                         <a class="c1-card-link" href="#">
                             <img class="c1-card-img" src="assets/shop/categories/product-6.png" alt="">
                             <div class="c1-card-title">Bioluminescent Lagoon</div>
                             <div class="c1-card-cost">$2,500</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+                    <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-3">
                         <a class="c1-card-link" href="#">
                             <img class="c1-card-img" src="assets/shop/categories/product-7.png" alt="">
                             <div class="c1-card-title">Bulk Dinoflagellates</div>
