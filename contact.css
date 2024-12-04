@@ -1,4 +1,4 @@
-body{
+body {
     color: var(--eco-white);
 }
 
@@ -77,6 +77,22 @@ header.transparent {
     animation: slideDown 0.3s ease-out;
 }
 
+.shop-btn {
+    position: relative;
+}
+.shop-btn span {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 4px;
+    left: 31px;
+    font-size: 13px;
+    color: var(--glowing-pink);
+    border-radius: 16px;
+    background-color: white;
+    text-align: center;
+}
+
 @keyframes slideDown {
     from {
         opacity: 0;
@@ -88,35 +104,36 @@ header.transparent {
     }
 }
 
-.main-content{
+.main-content {
     padding-top: 120px;
     background: var(--gradient-2);
 }
 
-.contact-container{
+.contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.component-1{
+.component-1 {
     max-width: 473px;
 }
 
-form{
+form {
     width: 50%;
     margin-bottom: 275px;
 }
 
-.form-title{
+.form-title {
     text-align: center;
 }
 
-.form-desc{
+.form-desc {
     text-align: center;
 }
 
-input, textarea{
+input,
+textarea {
     width: 100%;
     padding: 23px 26px;
     border-radius: 10px;
@@ -128,12 +145,12 @@ textarea {
     height: 165px;
 }
 
-.input-label{
+.input-label {
     margin-bottom: 16px;
     margin-top: 9px;
 }
 
-.submit-btn{
+.submit-btn {
     width: 300px;
     padding: 15px 0;
     border-radius: 32px;
@@ -149,20 +166,21 @@ textarea {
     background: var(--gradient-4);
 }
 
-.component-1{
+.component-1 {
     margin-bottom: 200px;
 }
 
-.c1-title, .c1-desc, .c1-links {
+.c1-title,
+.c1-desc,
+.c1-links {
     text-align: center;
-
 }
 
-.c1-links{
+.c1-links {
     font-family: var(--font-1-bold);
 }
 
-.c1-links a{
+.c1-links a {
     color: var(--eco-white);
     font-family: var(--font-1);
 }
@@ -338,7 +356,7 @@ footer {
 }
 
 @media (max-width: 576px) {
-    form{
+    form {
         width: 100%;
     }
 

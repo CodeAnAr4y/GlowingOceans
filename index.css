@@ -84,6 +84,22 @@ header.transparent {
     }
 }
 
+.shop-btn {
+    position: relative;
+}
+.shop-btn span {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 4px;
+    left: 31px;
+    font-size: 13px;
+    color: var(--glowing-pink);
+    border-radius: 16px;
+    background-color: white;
+    text-align: center;
+}
+
 /* Main page content styles */
 .content {
     position: relative;
