@@ -64,34 +64,135 @@
         <div class="main-content">
             <!-- Component 1 -->
             <div class="component-1">
-                <img class="title-img" src="assets/shop/categories/Mushlume-UFO-Pour_sml.png" alt="">
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class="c1-title">Science Items</h3>
+                <div class="main-banner">
+                    <div class="mobile-breadcrumbs d-lg-none">
+                        <a href="shop_main.html">Shop</a> > <a href="shop_category.html">Science Items</a>
+                    </div>
+                    <img class="title-img" src="assets/shop/categories/Mushlume-UFO-Pour_sml.png" alt="">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="c1-title">Science Items</h3>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <!-- desktop filters -->
                         <div class="c1-filters">
-                            <div>
-                                <select class="c1-select me-2">
-                                    <option class="c1-option">Availability</option>
-                                    <option class="c1-option">Action</option>
-                                    <option class="c1-option">Another Action</option>
-                                </select>
-                                <select class="c1-select">
-                                    <option class="c1-option">Product type</option>
-                                    <option class="c1-option">Action</option>
-                                    <option class="c1-option">Another Action</option>
-                                </select>
+                            <div class="d-flex">
+                                <div class="dropdown me-2">
+                                    <button class="desktop-dropdown-btn" type="button" id="availabilityMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div>Availability</div>
+                                        <img class="ms-5" src="assets/shop/categories/open-dropdown.svg" alt="">
+                                    </button>
+                                    <div class="dropdown-menu custom-dropdown-menu"
+                                        aria-labelledby="availabilityMenuButton">
+                                        <div class="dropdown-menu-title">7 results</div>
+                                        <hr>
+                                        <div class="dropdown-options">
+                                            <div class="dropdown-option">
+                                                <div>
+                                                    <input type="radio" name="availability" id="inStock">
+                                                    <label for="inStock">In stock</label>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-option">
+                                                <div>
+                                                    <input type="radio" name="availability" id="outOfStock">
+                                                    <label for="outOfStock">Out of stock</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown me-2">
+                                    <button class="desktop-dropdown-btn" type="button" id="productTypeMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div>Product type</div>
+                                        <img class="ms-5" src="assets/shop/categories/open-dropdown.svg" alt="">
+                                    </button>
+                                    <div class="dropdown-menu custom-dropdown-menu"
+                                        aria-labelledby="productTypeMenuButton">
+                                        <div class="dropdown-menu-title">7 results</div>
+                                        <hr>
+                                        <div class="dropdown-options">
+                                            <div class="dropdown-option">
+                                                <div>
+                                                    <input type="radio" name="productType" id="prodType1">
+                                                    <label for="prodType1">Lumie and DinoPets</label>
+                                                </div>
+                                                <div>2</div>
+                                            </div>
+                                            <div class="dropdown-option">
+                                                <div>
+                                                    <input type="radio" name="productType" id="prodType2">
+                                                    <label for="prodType2">Lumie supplies</label>
+                                                </div>
+                                                <div>3</div>
+                                            </div>
+                                            <div class="dropdown-option">
+                                                <div>
+                                                    <input type="radio" name="productType" id="prodType3">
+                                                    <label for="prodType3">Exhibition items</label>
+                                                </div>
+                                                <div>3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div>
-                                <select class="c1-select">
-                                    <option class="c1-option">Best Selling</option>
-                                    <option class="c1-option">Action</option>
-                                    <option class="c1-option">Another Action</option>
-                                </select>
+                                <div class="dropdown me-2">
+                                    <button class="desktop-dropdown-btn pt-1 pb-1" type="button" id="sortByMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="dropdown-sort-content">
+                                            <div class="dropdown-sort-title">Sort by</div>
+                                            <div class="dropdown-sort-value">Best Selling</div>
+                                        </div>
+                                        <img class="ms-5" src="assets/shop/categories/open-dropdown.svg" alt="">
+                                    </button>
+                                    <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="sortByMenuButton">
+                                        <div class="dropdown-options">
+                                            <div class="dropdown-option">
+                                                <div>
+                                                    <input type="radio" name="sortBy" id="sortByOption1" checked>
+                                                    <label for="sortByOption1">Featured</label>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-option">
+                                                <div>
+                                                    <input type="radio" name="sortBy" id="sortByOption2">
+                                                    <label for="sortByOption2">Best Selling</label>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-option">
+                                                <div>
+                                                    <input type="radio" name="sortBy" id="sortByOption3">
+                                                    <label for="sortByOption3">Price, low to high</label>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-option">
+                                                <div>
+                                                    <input type="radio" name="sortBy" id="sortByOption4">
+                                                    <label for="sortByOption4">Price, high to low</label>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-option">
+                                                <div>
+                                                    <input type="radio" name="sortBy" id="sortByOption5">
+                                                    <label for="sortByOption5">Date, new to old</label>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-option">
+                                                <div>
+                                                    <input type="radio" name="sortBy" id="sortByOption6">
+                                                    <label for="sortByOption6">Date, old to new</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -139,13 +240,41 @@
                     </div>
                     <hr>
                     <div class="container pt-4">
-                        <input class="mb-4" type="radio" id="inStock" name="available">
-                        <label for="inStock">In stock</label>
-                        <br />
-                        <input type="radio" id="outOfStock" name="available">
-                        <label for="outOfStock">Out of stock</label>
+                        <div class="mb-4">
+                            <input type="radio" id="inStock" name="available">
+                            <label for="inStock">In stock</label>
+                        </div>
+                        <div class="mb-4">
+                            <input type="radio" id="outOfStock" name="available">
+                            <label for="outOfStock">Out of stock</label>
+                        </div>
                     </div>
                 </div>
+
+                <!-- mobile product type menu -->
+                <div class="mobile-product-type-menu">
+                    <div class="menu-title-container">
+                        <button id="product-type-return-btn" class="close"><img src="assets/shop/categories/return.svg"
+                                alt="Return"></button>
+                        <div class="mobile-menu-title">Product Type</div>
+                    </div>
+                    <hr>
+                    <div class="container pt-4">
+                        <div class="mb-4">
+                            <input type="radio" id="opt1" name="productType">
+                            <label for="opt1">Lumie and DinoPets</label>
+                        </div>
+                        <div class="mb-4">
+                            <input type="radio" id="opt2" name="productType">
+                            <label for="opt2">Lumie supplies</label>
+                        </div>
+                        <div class="mb-4">
+                            <input type="radio" id="opt3" name="productType">
+                            <label for="opt3">Exhibition items</label>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- mobile sort menu -->
                 <div class="mobile-sort-menu">
                     <div class="menu-title-container">
@@ -155,29 +284,36 @@
                     </div>
                     <hr>
                     <div class="container pt-4">
-                        <input class="mb-4" type="radio" id="featured" name="sort">
-                        <label for="featured">Featured</label>
-                        <br />
-                        <input class="mb-4" type="radio" id="bestSelling" name="sort">
-                        <label for="bestSelling">Best Selling</label>
-                        <br />
-                        <input class="mb-4" type="radio" id="lowHigh" name="sort">
-                        <label for="lowHigh">Price, low to high</label>
-                        <br />
-                        <input class="mb-4" type="radio" id="highLow" name="sort">
-                        <label for="highLow">Price, high to low</label>
-                        <br />
-                        <input class="mb-4" type="radio" id="newOld" name="sort">
-                        <label for="newOld">Date, new to old</label>
-                        <br />
-                        <input type="radio" id="oldNew" name="sort">
-                        <label for="oldNew">Date, old to new</label>
+                        <div class="mb-4">
+                            <input type="radio" id="featured" name="sort">
+                            <label for="featured">Featured</label>
+                        </div>
+                        <div class="mb-4">
+                            <input type="radio" id="bestSelling" name="sort">
+                            <label for="bestSelling">Best Selling</label>
+                        </div>
+                        <div class="mb-4">
+                            <input type="radio" id="lowHigh" name="sort">
+                            <label for="lowHigh">Price, low to high</label>
+                        </div>
+                        <div class="mb-4">
+                            <input type="radio" id="highLow" name="sort">
+                            <label for="highLow">Price, high to low</label>
+                        </div>
+                        <div class="mb-4">
+                            <input type="radio" id="newOld" name="sort">
+                            <label for="newOld">Date, new to old</label>
+                        </div>
+                        <div class="mb-4">
+                            <input type="radio" id="oldNew" name="sort">
+                            <label for="oldNew">Date, old to new</label>
+                        </div>
                     </div>
                 </div>
 
 
 
-<!-- Products -->
+                <!-- Products -->
                 <div class="row">
                     <div class="col-12">
                         <div class="c1-results-title">7 Products</div>
@@ -321,8 +457,14 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="shop_category.js"></script>
